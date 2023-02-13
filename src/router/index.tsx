@@ -3,7 +3,7 @@
 import React from 'react';
 import { createBrowserRouter, Link } from "react-router-dom";
 import { Counter } from "../views/Counter";
-import { Pets } from '../views/Pets';
+import { Pets } from '../views/Pets/Pets';
 
 export const router = createBrowserRouter([
     {

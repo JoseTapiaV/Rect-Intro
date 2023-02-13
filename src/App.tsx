@@ -3,7 +3,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Counter } from './views/Counter';
-import { Pets } from './views/Pets';
+import { Pets } from './views/Pets/Pets';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './router';
 

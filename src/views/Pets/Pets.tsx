@@ -1,8 +1,10 @@
 // Views es donde van las paginas
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import { PetCard } from '../components/PetCard';
-import { Pet } from '../interfaces/Pet';
+import { PetCard } from '../../components/PetCard';
+import { Pet } from '../../interfaces/Pet';
+// Importar el CSS
+import './Pets.css';
 
 function timeout(ms: number): Promise<void> {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -60,7 +62,7 @@ export const Pets = () => {
                         Cargando...
                     </div>
                 ) : (
-                    <table className='table'>
+                    <table className='petsContainer'>
                         <thead className='thead-dark'>
                             <tr>
                                 <td>
