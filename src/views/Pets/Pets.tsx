@@ -62,7 +62,7 @@ export const Pets = () => {
                         Cargando...
                     </div>
                 ) : (
-                    <table className='petsContainer'>
+                    <table className='table petsContainer'>
                         <thead className='thead-dark'>
                             <tr>
                                 <td>
