@@ -51,6 +51,11 @@ export const Pets = () => {
         fetchData().then(data => {
             setLoading(false); setData(data);
         });
+
+        // Para hacer limpieza de data siempre que se salga de una pagina
+        return () => {
+            console.log('Salida de la pagina')
+        }
     }, [])
 
     // Tabla de mascotas en HTML JSX

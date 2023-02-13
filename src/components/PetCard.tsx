@@ -8,11 +8,11 @@ interface Props{
 
 export const PetCard: FC<Props> = (props) => {
 
-    const {name, age, bornDate, country }= props.data
+    const {id, name, age, bornDate, country }= props.data
 
     return (
         <div className="card">
-            <div className="card-body">
+            <div className="card-body" key={id}>
                 <div>Name: {name}</div>
                 <div>Age: {age}</div>
                 <div>Born Date: {bornDate.toDateString()}</div>
